@@ -12,7 +12,6 @@ export default function BlogLayout({
       <button
         onClick={() => {
           setCount(count + 1);
-          console.log("add layout");
         }}
       >
         +1
