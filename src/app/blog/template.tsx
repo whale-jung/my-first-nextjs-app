@@ -11,7 +11,6 @@ export default function BlogTemplate({
       <h1>Blog Template</h1>
       <button
         onClick={() => {
-          console.log("add template");
           setCount(count + 1);
         }}
       >

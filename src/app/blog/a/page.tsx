@@ -1,5 +1,15 @@
 import Link from "next/link"
-export default function APage() {
+const getData = async () => {
+  //触发异步会自动跳转到loading组件 异步结束正常返回页面
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("数据")
+    }, 1000)
+  })
+}
+export default async function APage() {
+    const data = await getData()
+    console.log(data)
     return (
         <div>
             <h1>A Page</h1>

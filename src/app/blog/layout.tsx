@@ -8,11 +8,10 @@ export default function BlogLayout({
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h1>Blog 布局组件?</h1>
+      <h1>Blog layout</h1>
       <button
         onClick={() => {
           setCount(count + 1);
-          console.log("add layout");
         }}
       >
         +1
